@@ -49,3 +49,5 @@ The following parameters must be provided this file:
 # Example analysis
 
 An example input file (example.inp) is provided. The files necessary to run this analysis are provided in ./InputFiles. A yaml file to install all necessary dependencies can be found at [https://github.com/eshuldiner/Aging/tree/main/Environment](https://github.com/eshuldiner/Aging/blob/main/Environment/tubaseq.yml).
+
+Usage: sbatch run_adaptive_array.sh example.inp
