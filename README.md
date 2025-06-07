@@ -53,5 +53,7 @@ An example input file (example.inp) is provided. The files necessary to run this
 Usage: 
 
 ```
+
 sbatch run_adaptive_array.sh example.inp
+
 ```
