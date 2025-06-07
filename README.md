@@ -46,4 +46,6 @@ The following parameters must be provided this file:
 | rankOn | For correlation analyses; which statistic to use in calculating correlation across contexts. | string |
 | incList | For correlation analyses; named list of sgRNAs or genes to include in ranking analysis. Format is name:gene1,gene2...geneN | string |
 
+# Example analysis
 
+An example input file (example.inp) is provided. The files necessary to run this analysis are provided in ./InputFiles. A yaml file to install all necessary dependencies can be found at https://github.com/eshuldiner/Aging.
