@@ -14,7 +14,7 @@ For information and code related to running the Tuba-seq pipeline, see https://g
 
 To compare equivalent portions of the EML4-ALK V1 and V3 tumor size distribution we use a method which we term “adaptive sampling” in which the same number of tumors per unit of virus delivered are analyzed for each tumor genotype. Specificially we scaled the number of tumors analyzed for each sgRNA i in each cohort j to account for differences in viral titer and the number of mice transduced in each cohort, and then analyzed the largest $N_{i,j}$ tumors per Lenti-sgRNA/Cre vector.
 
-This scaling procedure requires selecting a benchmark sgRNA and a benchmark cohort, and then selecting a defined number of tumors with that benchmark sgRNA from that cohort. The number of tumors sampled for each other sgRNA $i$ in each cohort $$j ($N_{i,j}$) is then adjusted to take into account the proportions of sgRNAs in the viral pool and differences in the overall viral titer delivered to the young and old cohorts:
+This scaling procedure requires selecting a benchmark sgRNA and a benchmark cohort, and then selecting a defined number of tumors with that benchmark sgRNA from that cohort. The number of tumors sampled for each other sgRNA $i$ in each cohort $j$ ($N_{i,j}$) is then adjusted to take into account the proportions of sgRNAs in the viral pool and differences in the overall viral titer delivered to the young and old cohorts:
 
 ```math
 N_{i,j} = N_{i=basal, j=basal} * \frac{T_j}{T_{j=basal}} * \frac{p_{i,j}}{p_{i=basal, j=basal}}
@@ -26,7 +26,7 @@ The parameters defining a given analysis are passed through an input file. The p
 By default, the location and name of the project file should be as follows:
 <root>/Parameters/<parameter_id>_parameter_file.txt
 
-The following parameters must be provided this file:
+The following parameters must be provided in this file:
 
 | Parameter Name    | Definition | Datatype |
 | -------- | ------- | ------- |
@@ -48,7 +48,7 @@ The following parameters must be provided this file:
 
 # Example analysis
 
-An example input file (example.inp) is provided. The files necessary to run this analysis are provided in ./InputFiles. A yaml file to install all necessary dependencies can be found at [https://github.com/eshuldiner/Aging/tree/main/Environment](https://github.com/eshuldiner/Aging/blob/main/Environment/tubaseq.yml).
+An example input file (/Analysis/example.inp) is provided. The files necessary to run this analysis are provided in ./InputFiles. A yaml file to install all necessary dependencies can be found at [https://github.com/eshuldiner/Aging/tree/main/Environment](https://github.com/eshuldiner/Aging/blob/main/Environment/tubaseq.yml).
 
 Usage: 
 
