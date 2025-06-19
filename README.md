@@ -21,10 +21,7 @@ N_{i,j} = N_{i=basal, j=basal} * \frac{T_j}{T_{j=basal}} * \frac{p_{i,j}}{p_{i=b
 ```
 ## Input file
 
-The parameters defining a given analysis are passed through an input file. The parameter file is space-separated, with each line of the file defining an analysis.
-
-By default, the location and name of the project file should be as follows:
-<root>/Parameters/<parameter_id>_parameter_file.txt
+The parameters defining a given analysis are passed through an input file. The input file is space-separated, with each line of the file defining an analysis.
 
 The following parameters must be provided in this file:
 
