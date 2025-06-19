@@ -175,7 +175,7 @@ def singleDatasetAnalysis(data, adaptive_dataset_size=None, genelevel=False):
 
     return(size_point_estimates, merged_mouse_dict)
 
-def analysis_rank_stat(root, statistic, focal_number, datasets, sgID_ratios, net_titer_dict, focal_dataset, focal_sgID, focalStat, nboot, summary_str, includeStr, exclude, GL, incList=False):
+def analysis_rank_stat(root, focal_number, datasets, sgID_ratios, net_titer_dict, focal_dataset, focal_sgID, focalStat, nboot, summary_str, includeStr, exclude, GL, incList=False):
     '''Currently can only rank based on percentile values (or LNmean)
     focalStat is the percentile you want to rank on.
 
