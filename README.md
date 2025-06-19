@@ -37,7 +37,7 @@ The following parameters must be provided in this file:
 | focal_sgID | Basal sgRNA for which a defined number of tumors is specified  | string |
 | focal_number | Number of tumors to analyze for the <focal_sgID> in the <focal_dataset>. i.e., $N_{i=basal, j=basal}$ | integer |
 | datasets | List of identifiers for datasets to analyze. Indexing must match <datafiles>.  | comma-separated strings |
-| datafiles | List of paths to datasets to analyze. Indexing must match <datasets>.  | comma-separated strings |
+| datafiles | List of paths to datasets to analyze. Indexing must match < datasets >.  | comma-separated strings |
 | info_file | Path to file containing information on samples in <datasets> (including viral titer). See example info file provided (TSG75_samples.txt) | string |
 | inerts | Non- or safe-targeting control sgRNAs (used as baseline in calculating the effects of gene inactivation) | comma-separated strings |
 | nboot | Number of bootstraps | integer |
